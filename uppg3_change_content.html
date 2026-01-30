@@ -10,15 +10,41 @@
       }
     </style>
   </head>
+
   <body>
-    <!-- Your body content goes here -->
     <button onclick="showCarbonara()">Show carbonara ingredients</button>
     <button onclick="showPizza()">Show pizza ingredients</button>
 
     <div id="ingredients"></div>
 
     <script>
-      // TODO: Skapa funktionerna showCarbonara() och showPizza() för att visa ingredienserna för respektive recept i diven ingredients
+      function showCarbonara() {
+        document.getElementById("ingredients").innerHTML = `
+          <h2>Carbonara – Ingredienser</h2>
+          <ul>
+            <li>Pasta</li>
+            <li>Ägg</li>
+            <li>Kebab</li>
+            <li>Parmesanost</li>
+            <li>Svartpeppar</li>
+          </ul>
+        `;
+      }
+ 
+      function showPizza() {
+        document.getElementById("ingredients").innerHTML = `
+          <h2>Pizza – Ingredienser</h2>
+          <ul>
+            <li>Pizzadeg</li>
+            <li>Tomatsås</li>
+            <li>Mozzarella</li>
+            <li>Kyckling</li>
+            <li>Oregano</li>
+          </ul>
+        `;
+      }
     </script>
   </body>
 </html>
+
+

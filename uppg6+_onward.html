@@ -1,5 +1,5 @@
 <!-- 
-    Om du är färdig med de 5 första uppgifterna kan du på egen hand kolla upp och testa mer avancerad JS
+Om du är färdig med de 5 första uppgifterna kan du på egen hand kolla upp och testa mer avancerad JS
 T.ex. hur man loopar eller gör if-satser i JS
 -->
 
@@ -10,7 +10,26 @@ T.ex. hur man loopar eller gör if-satser i JS
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 6+: Onward</title>
   </head>
-  <body></body>
 
-  <script></script>
+  <body>
+    <h2>Gissa ett tal mellan 1 och 15</h2>
+
+    <input type="number" id="guess" />
+    <button onclick="checkGuess()">Gissa</button>
+
+    <p id="result"></p>
+
+    <script>
+      function checkGuess() {
+        var guess = document.getElementById("guess").value;
+        var correctNumber = 10;
+
+        if (guess == correctNumber) {
+          document.getElementById("result").innerText = "Rätt gissat";
+        } else {
+          document.getElementById("result").innerText = "Fel gissat";
+        }
+      }
+    </script>
+  </body>
 </html>

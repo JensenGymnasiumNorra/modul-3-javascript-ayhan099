@@ -2,3 +2,30 @@
     Låt användaren skriva in sin favoritmat med en input-tag
     När användaren klickar på knappen ska du välkomna användaren till hemsidan 
     + skriva ut dens favoritmat + "MUMS" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppgift 1: Alert</title>
+  </head>
+
+  <body>
+    <h2>Välkommen!</h2>
+
+    <!-- Input där användaren skriver sin favoritmat -->
+    <input type="text" id="favoritMat" placeholder="Skriv din favoritmat" />
+
+    <br /><br />
+
+    <!-- Knapp -->
+    <button onclick="showAlert()">Klicka</button>
+
+    <script>
+      function showAlert() {
+        var food = document.getElementById("favoritMat").value;
+        alert("Välkommen till hemsidan! Din favoritmat är " + food + " MUMS");
+      }
+    </script>
+  </body>
+</html>

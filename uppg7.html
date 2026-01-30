@@ -13,13 +13,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator Example</title>
   </head>
+
   <body>
-    <input type="text" id="num1" placeholder="Enter number 1" />
-    <input type="text" id="num2" placeholder="Enter number 2" />
+    <input type="range" id="num1" min="0" max="100" value="50" oninput="updateValues()" />
+<span id="value1">50</span>
+
+<br />
+
+<input type="range" id="num2" min="0" max="100" value="50" oninput="updateValues()" />
+<span id="value2">50</span>
+
+
     <br /><br />
-    <button onclick="calculateSum()">+</button>
+    <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+
+<br /><br />
+
+<button onclick="calculate()">Beräkna</button>
+
 
     <p id="result">Result:</p>
+
+    <script src="simple_calculator.js"></script>
   </body>
-  <script src="simple_calculator.js"></script>
+  <img src="https://i0.wp.com/calmatters.org/wp-content/uploads/2021/08/math-curriculum.jpg?fit=1200%2C900&ssl=1" alt="" width="300">
+
 </html>
+
+<!--klar-!>
+

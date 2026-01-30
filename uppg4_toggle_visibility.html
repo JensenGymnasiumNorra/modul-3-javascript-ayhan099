@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 4: Toggle Visibility</title>
+    <style>
+      #toggleElement {
+        margin-top: 20px;
+      }
+    </style>
   </head>
-  <body>
-    <button onclick="toggleVisibility()">Toggle Visibility</button>
-    <!-- TODO: Skapa ett element som visas/döljs när knappen klickas på -->
-  </body>
 
-  <script>
-    // Your script goes here
-    function toggleVisibility() {
-      var element = document.getElementById("toggleElement");
-      element.style.display =
-        element.style.display === "none" ? "block" : "none";
-    }
-  </script>
+  <body>
+    <button onclick="toggleVisibility()">Visa</button>
+
+    <!-- Elementet som visas/döljs -->
+    <div id="toggleElement">
+      <p>HEJ 123</p>
+    </div>
+
+    <script>
+      function toggleVisibility() {
+        var element = document.getElementById("toggleElement");
+
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
 </html>
